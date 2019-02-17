@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/hasan/test/time_gap/src/time_gap.cpp
+iostream
+-
+time.h
+-
+sys/time.h
+-
+vector
+-
+boost/algorithm/string.hpp
+-
+assert.h
+-
+
