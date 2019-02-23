@@ -60,39 +60,113 @@ CMAKE_SOURCE_DIR = /home/hasan/test/time_gap
 CMAKE_BINARY_DIR = /home/hasan/test/time_gap/build
 
 #=============================================================================
-# Target rules for target CMakeFiles/time_gap.dir
+# Target rules for target CMakeFiles/ace_server.dir
 
 # All Build rule for target.
-CMakeFiles/time_gap.dir/all:
-	$(MAKE) -f CMakeFiles/time_gap.dir/build.make CMakeFiles/time_gap.dir/depend
-	$(MAKE) -f CMakeFiles/time_gap.dir/build.make CMakeFiles/time_gap.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hasan/test/time_gap/build/CMakeFiles --progress-num=1,2 "Built target time_gap"
-.PHONY : CMakeFiles/time_gap.dir/all
+CMakeFiles/ace_server.dir/all:
+	$(MAKE) -f CMakeFiles/ace_server.dir/build.make CMakeFiles/ace_server.dir/depend
+	$(MAKE) -f CMakeFiles/ace_server.dir/build.make CMakeFiles/ace_server.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hasan/test/time_gap/build/CMakeFiles --progress-num=1,2,3 "Built target ace_server"
+.PHONY : CMakeFiles/ace_server.dir/all
 
 # Include target in all.
-all: CMakeFiles/time_gap.dir/all
+all: CMakeFiles/ace_server.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/time_gap.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/hasan/test/time_gap/build/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/time_gap.dir/all
+CMakeFiles/ace_server.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hasan/test/time_gap/build/CMakeFiles 3
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/ace_server.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/hasan/test/time_gap/build/CMakeFiles 0
-.PHONY : CMakeFiles/time_gap.dir/rule
+.PHONY : CMakeFiles/ace_server.dir/rule
 
 # Convenience name for target.
-time_gap: CMakeFiles/time_gap.dir/rule
+ace_server: CMakeFiles/ace_server.dir/rule
 
-.PHONY : time_gap
-
-# clean rule for target.
-CMakeFiles/time_gap.dir/clean:
-	$(MAKE) -f CMakeFiles/time_gap.dir/build.make CMakeFiles/time_gap.dir/clean
-.PHONY : CMakeFiles/time_gap.dir/clean
+.PHONY : ace_server
 
 # clean rule for target.
-clean: CMakeFiles/time_gap.dir/clean
+CMakeFiles/ace_server.dir/clean:
+	$(MAKE) -f CMakeFiles/ace_server.dir/build.make CMakeFiles/ace_server.dir/clean
+.PHONY : CMakeFiles/ace_server.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/ace_server.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/server.dir
+
+# All Build rule for target.
+CMakeFiles/server.dir/all:
+	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/depend
+	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hasan/test/time_gap/build/CMakeFiles --progress-num=7,8 "Built target server"
+.PHONY : CMakeFiles/server.dir/all
+
+# Include target in all.
+all: CMakeFiles/server.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/server.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hasan/test/time_gap/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/server.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hasan/test/time_gap/build/CMakeFiles 0
+.PHONY : CMakeFiles/server.dir/rule
+
+# Convenience name for target.
+server: CMakeFiles/server.dir/rule
+
+.PHONY : server
+
+# clean rule for target.
+CMakeFiles/server.dir/clean:
+	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/clean
+.PHONY : CMakeFiles/server.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/server.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/client.dir
+
+# All Build rule for target.
+CMakeFiles/client.dir/all:
+	$(MAKE) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/depend
+	$(MAKE) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hasan/test/time_gap/build/CMakeFiles --progress-num=4,5,6 "Built target client"
+.PHONY : CMakeFiles/client.dir/all
+
+# Include target in all.
+all: CMakeFiles/client.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/client.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hasan/test/time_gap/build/CMakeFiles 3
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/client.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hasan/test/time_gap/build/CMakeFiles 0
+.PHONY : CMakeFiles/client.dir/rule
+
+# Convenience name for target.
+client: CMakeFiles/client.dir/rule
+
+.PHONY : client
+
+# clean rule for target.
+CMakeFiles/client.dir/clean:
+	$(MAKE) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/clean
+.PHONY : CMakeFiles/client.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/client.dir/clean
 
 .PHONY : clean
 

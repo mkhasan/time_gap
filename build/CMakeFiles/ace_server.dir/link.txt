@@ -1,0 +1,1 @@
+/usr/bin/c++    -ggdb -Wall   CMakeFiles/ace_server.dir/src/ace_server.cpp.o CMakeFiles/ace_server.dir/src/client_handler.cpp.o  -o ../bin/ace_server /usr/lib/libACE.so -lpthread 

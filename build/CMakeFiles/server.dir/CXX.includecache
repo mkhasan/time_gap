@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/hasan/test/time_gap/src/server.cpp
+stdio.h
+-
+string.h
+-
+sys/socket.h
+-
+arpa/inet.h
+-
+unistd.h
+-
+fstream
+-
+iostream
+-
+exception
+-
+

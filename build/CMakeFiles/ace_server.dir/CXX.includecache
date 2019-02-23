@@ -1,0 +1,34 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/hasan/test/time_gap/src/ace_server.cpp
+client_acceptor.h
+/home/hasan/test/time_gap/src/client_acceptor.h
+signal.h
+-
+
+/home/hasan/test/time_gap/src/client_acceptor.h
+ace/Acceptor.h
+/home/hasan/test/time_gap/src/ace/Acceptor.h
+ace/SOCK_Acceptor.h
+/home/hasan/test/time_gap/src/ace/SOCK_Acceptor.h
+client_handler.h
+/home/hasan/test/time_gap/src/client_handler.h
+
+/home/hasan/test/time_gap/src/client_handler.cpp
+client_acceptor.h
+/home/hasan/test/time_gap/src/client_acceptor.h
+client_handler.h
+/home/hasan/test/time_gap/src/client_handler.h
+
+/home/hasan/test/time_gap/src/client_handler.h
+ace/Svc_Handler.h
+/home/hasan/test/time_gap/src/ace/Svc_Handler.h
+ace/SOCK_Stream.h
+/home/hasan/test/time_gap/src/ace/SOCK_Stream.h
+

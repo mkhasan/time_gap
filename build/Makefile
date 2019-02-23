@@ -111,44 +111,178 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named time_gap
+# Target rules for targets named ace_server
 
 # Build rule for target.
-time_gap: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 time_gap
-.PHONY : time_gap
+ace_server: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 ace_server
+.PHONY : ace_server
 
 # fast build rule for target.
-time_gap/fast:
-	$(MAKE) -f CMakeFiles/time_gap.dir/build.make CMakeFiles/time_gap.dir/build
-.PHONY : time_gap/fast
+ace_server/fast:
+	$(MAKE) -f CMakeFiles/ace_server.dir/build.make CMakeFiles/ace_server.dir/build
+.PHONY : ace_server/fast
 
-src/time_gap.o: src/time_gap.cpp.o
+#=============================================================================
+# Target rules for targets named server
 
-.PHONY : src/time_gap.o
+# Build rule for target.
+server: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 server
+.PHONY : server
+
+# fast build rule for target.
+server/fast:
+	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/build
+.PHONY : server/fast
+
+#=============================================================================
+# Target rules for targets named client
+
+# Build rule for target.
+client: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 client
+.PHONY : client
+
+# fast build rule for target.
+client/fast:
+	$(MAKE) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/build
+.PHONY : client/fast
+
+src/ace_server.o: src/ace_server.cpp.o
+
+.PHONY : src/ace_server.o
 
 # target to build an object file
-src/time_gap.cpp.o:
-	$(MAKE) -f CMakeFiles/time_gap.dir/build.make CMakeFiles/time_gap.dir/src/time_gap.cpp.o
-.PHONY : src/time_gap.cpp.o
+src/ace_server.cpp.o:
+	$(MAKE) -f CMakeFiles/ace_server.dir/build.make CMakeFiles/ace_server.dir/src/ace_server.cpp.o
+.PHONY : src/ace_server.cpp.o
 
-src/time_gap.i: src/time_gap.cpp.i
+src/ace_server.i: src/ace_server.cpp.i
 
-.PHONY : src/time_gap.i
+.PHONY : src/ace_server.i
 
 # target to preprocess a source file
-src/time_gap.cpp.i:
-	$(MAKE) -f CMakeFiles/time_gap.dir/build.make CMakeFiles/time_gap.dir/src/time_gap.cpp.i
-.PHONY : src/time_gap.cpp.i
+src/ace_server.cpp.i:
+	$(MAKE) -f CMakeFiles/ace_server.dir/build.make CMakeFiles/ace_server.dir/src/ace_server.cpp.i
+.PHONY : src/ace_server.cpp.i
 
-src/time_gap.s: src/time_gap.cpp.s
+src/ace_server.s: src/ace_server.cpp.s
 
-.PHONY : src/time_gap.s
+.PHONY : src/ace_server.s
 
 # target to generate assembly for a file
-src/time_gap.cpp.s:
-	$(MAKE) -f CMakeFiles/time_gap.dir/build.make CMakeFiles/time_gap.dir/src/time_gap.cpp.s
-.PHONY : src/time_gap.cpp.s
+src/ace_server.cpp.s:
+	$(MAKE) -f CMakeFiles/ace_server.dir/build.make CMakeFiles/ace_server.dir/src/ace_server.cpp.s
+.PHONY : src/ace_server.cpp.s
+
+src/client.o: src/client.cpp.o
+
+.PHONY : src/client.o
+
+# target to build an object file
+src/client.cpp.o:
+	$(MAKE) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/src/client.cpp.o
+.PHONY : src/client.cpp.o
+
+src/client.i: src/client.cpp.i
+
+.PHONY : src/client.i
+
+# target to preprocess a source file
+src/client.cpp.i:
+	$(MAKE) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/src/client.cpp.i
+.PHONY : src/client.cpp.i
+
+src/client.s: src/client.cpp.s
+
+.PHONY : src/client.s
+
+# target to generate assembly for a file
+src/client.cpp.s:
+	$(MAKE) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/src/client.cpp.s
+.PHONY : src/client.cpp.s
+
+src/client_handler.o: src/client_handler.cpp.o
+
+.PHONY : src/client_handler.o
+
+# target to build an object file
+src/client_handler.cpp.o:
+	$(MAKE) -f CMakeFiles/ace_server.dir/build.make CMakeFiles/ace_server.dir/src/client_handler.cpp.o
+.PHONY : src/client_handler.cpp.o
+
+src/client_handler.i: src/client_handler.cpp.i
+
+.PHONY : src/client_handler.i
+
+# target to preprocess a source file
+src/client_handler.cpp.i:
+	$(MAKE) -f CMakeFiles/ace_server.dir/build.make CMakeFiles/ace_server.dir/src/client_handler.cpp.i
+.PHONY : src/client_handler.cpp.i
+
+src/client_handler.s: src/client_handler.cpp.s
+
+.PHONY : src/client_handler.s
+
+# target to generate assembly for a file
+src/client_handler.cpp.s:
+	$(MAKE) -f CMakeFiles/ace_server.dir/build.make CMakeFiles/ace_server.dir/src/client_handler.cpp.s
+.PHONY : src/client_handler.cpp.s
+
+src/queue.o: src/queue.cpp.o
+
+.PHONY : src/queue.o
+
+# target to build an object file
+src/queue.cpp.o:
+	$(MAKE) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/src/queue.cpp.o
+.PHONY : src/queue.cpp.o
+
+src/queue.i: src/queue.cpp.i
+
+.PHONY : src/queue.i
+
+# target to preprocess a source file
+src/queue.cpp.i:
+	$(MAKE) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/src/queue.cpp.i
+.PHONY : src/queue.cpp.i
+
+src/queue.s: src/queue.cpp.s
+
+.PHONY : src/queue.s
+
+# target to generate assembly for a file
+src/queue.cpp.s:
+	$(MAKE) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/src/queue.cpp.s
+.PHONY : src/queue.cpp.s
+
+src/server.o: src/server.cpp.o
+
+.PHONY : src/server.o
+
+# target to build an object file
+src/server.cpp.o:
+	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/server.cpp.o
+.PHONY : src/server.cpp.o
+
+src/server.i: src/server.cpp.i
+
+.PHONY : src/server.i
+
+# target to preprocess a source file
+src/server.cpp.i:
+	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/server.cpp.i
+.PHONY : src/server.cpp.i
+
+src/server.s: src/server.cpp.s
+
+.PHONY : src/server.s
+
+# target to generate assembly for a file
+src/server.cpp.s:
+	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/server.cpp.s
+.PHONY : src/server.cpp.s
 
 # Help Target
 help:
@@ -157,11 +291,25 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... edit_cache"
-	@echo "... time_gap"
 	@echo "... rebuild_cache"
-	@echo "... src/time_gap.o"
-	@echo "... src/time_gap.i"
-	@echo "... src/time_gap.s"
+	@echo "... ace_server"
+	@echo "... server"
+	@echo "... client"
+	@echo "... src/ace_server.o"
+	@echo "... src/ace_server.i"
+	@echo "... src/ace_server.s"
+	@echo "... src/client.o"
+	@echo "... src/client.i"
+	@echo "... src/client.s"
+	@echo "... src/client_handler.o"
+	@echo "... src/client_handler.i"
+	@echo "... src/client_handler.s"
+	@echo "... src/queue.o"
+	@echo "... src/queue.i"
+	@echo "... src/queue.s"
+	@echo "... src/server.o"
+	@echo "... src/server.i"
+	@echo "... src/server.s"
 .PHONY : help
 
 
